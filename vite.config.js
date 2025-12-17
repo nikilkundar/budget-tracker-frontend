@@ -7,4 +7,13 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-})
+  server: {
+    proxy: {
+      "/api": {
+        target: "https://budget-tracker-backend-production.up.railway.app",
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, "")
+      }
+    }
+  }
+});
