@@ -1,19 +1,15 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
   ],
-  server: {
-    proxy: {
-      "/api": {
-        target: "https://budget-tracker-backend-production.up.railway.app",
-        changeOrigin: true,
-        rewrite: path => path.replace(/^\/api/, "")
-      }
-    }
-  }
+
+  // ⭐ CRITICAL FOR VERCEL
+  base: "/",
+
+  // ❌ REMOVE server.proxy COMPLETELY
 });
