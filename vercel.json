@@ -3,6 +3,10 @@
     {
       "source": "/api/(.*)",
       "destination": "https://budget-tracker-backend-production.up.railway.app/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
