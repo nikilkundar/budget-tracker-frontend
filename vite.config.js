@@ -7,9 +7,4 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-
-  // ⭐ CRITICAL FOR VERCEL
-  base: "/",
-
-  // ❌ REMOVE server.proxy COMPLETELY
 });
