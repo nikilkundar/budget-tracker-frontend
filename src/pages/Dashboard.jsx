@@ -22,7 +22,7 @@ export default function Dashboard() {
   const [editingId, setEditingId] = useState(null);
 
   useEffect(() => {
-    apiFetch("/expenses").then((data) => {
+    apiFetch("/expenses/").then((data) => {
       if (data) setExpenses(data);
     });
   }, []);
@@ -76,7 +76,7 @@ export default function Dashboard() {
         onSubmit={async (e) => {
           e.preventDefault();
 
-          const data = await apiFetch("/expenses", {
+          const data = await apiFetch("/expenses/", {
             method: "POST",
             body: JSON.stringify({
               title,
