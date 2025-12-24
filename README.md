@@ -35,22 +35,8 @@ The frontend communicates with a **FastAPI backend** via REST APIs.
 ---
 
 ## 📁 Project Structure
-budget_tracker_frontend/
-├── public/
-│ └── _redirects
-├── src/
-│ ├── pages/
-│ │ ├── Login.jsx
-│ │ ├── Register.jsx
-│ │ └── Dashboard.jsx
-│ ├── services/
-│ │ ├── api.js
-│ │ └── auth.js
-│ ├── App.jsx
-│ └── main.jsx
-├── index.html
-├── vite.config.js
-└── package.json
+
+<img width="237" height="557" alt="image" src="https://github.com/user-attachments/assets/56e5f384-63c2-4b15-991e-bc05aa82b38e" />
 
 ---
 
